@@ -1,0 +1,42 @@
+.ChatList {
+  margin-top: 30px;
+}
+
+.MessageInput {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+}
+
+.MessageInput input {
+  flex-grow: 1;
+}
+
+.MessageList {
+  padding: 20px;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 80px;
+  z-index: -1;
+}
+
+.Main {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  background: #000;
+}
+
+@media (max-width: 600px) {
+  .Main {
+    flex-direction: column;
+    align-items: center;
+  }
+}
